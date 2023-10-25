@@ -4,7 +4,7 @@ function SearchBar({ onSearch }) {
   return (
     <div>
       <input
-      className="todo-input"
+      className="todo-search"
         type="text"
         placeholder="Search tasks"
         onChange={(e) => onSearch(e.target.value)}
