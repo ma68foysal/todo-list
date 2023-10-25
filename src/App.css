@@ -73,3 +73,10 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+.copy-btn {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+}

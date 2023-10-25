@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
+import CopyButton from './CopyButton';
 function TodoList() {
   const [todos, setTodos] = useState([]);
   const [task, setTask] = useState('');
@@ -33,7 +34,11 @@ function TodoList() {
       <SearchBar  onSearch={setSearchQuery} />
       <ul>
         {filteredTodos.map((todo, index) => (
-          <li className='incompleted Todo' key={index}>{todo}</li>
+          
+          <li className='incompleted Todo' key={index}>{todo}
+          <CopyButton textToCopy={todo}/>
+          </li>
+          
         ))}
       </ul>
     </div>
