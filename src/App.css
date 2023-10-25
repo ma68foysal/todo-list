@@ -45,6 +45,7 @@ h1 {
   margin-bottom: 2rem;
   width: 300px;
   color: #fff;
+  margin-right: 8px;
 }
 .todo-search{
   outline: none;

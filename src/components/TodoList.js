@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import SearchBar from './SearchBar';
 import CopyButton from './CopyButton';
 import CategoryFilter from './CategoryFilter';
@@ -11,6 +11,7 @@ function TodoList() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [categories, setCategories] = useState([]);
+  const Ref  = useRef(null)
 
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
@@ -68,12 +69,14 @@ function TodoList() {
       <button  onClick={addTodo} className='todo-btn'>Add</button>
       </div>
       
-      <SearchBar onSearch={setSearchQuery} />
+      <SearchBar onSearch={setSearchQuery} Ref={Ref} />
       <CategoryFilter
         categories={categories}
         selectedCategory={selectedCategory}
         onCategoryChange={setSelectedCategory}
         setSearchQuery={setSearchQuery}
+        searchQuery={searchQuery}
+        Ref={Ref}
       />
 
         {filteredTodos.length === 0 ? (

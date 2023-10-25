@@ -1,11 +1,13 @@
 import React from 'react';
 
-function CategoryFilter({ categories, selectedCategory, onCategoryChange,setSearchQuery }) {
+function CategoryFilter({ categories, selectedCategory, onCategoryChange,setSearchQuery,searchQuery,Ref }) {
    const selectCategory = ( e) =>{
        onCategoryChange(e.target.value)
+      Ref.current.value = ''
        setSearchQuery("")
     }
-    
+    console.log(searchQuery);
+
   return (
     <div className='category-box'>
       <label className='categoryFilter' htmlFor="categorySelect">Filter by Category:</label>

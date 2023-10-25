@@ -1,9 +1,11 @@
 import React from 'react';
 
-function SearchBar({ onSearch }) {
+function SearchBar({ onSearch , Ref }) {
+
   return (
     <div>
       <input
+      ref={Ref}
       className="todo-search"
         type="text"
         placeholder="Search tasks"
