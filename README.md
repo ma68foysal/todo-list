@@ -8,7 +8,6 @@ This is a simple Todo List application built with React.js. It allows you to cre
 - Search for tasks using a search bar.
 - Copy task content to the clipboard.
 - Store tasks in local storage for persistence.
-- Edit and delete tasks.
 - Responsive design for both desktop and mobile.
 
 ## Usage
@@ -20,9 +19,14 @@ This is a simple Todo List application built with React.js. It allows you to cre
    cd react-todo-list
 
 1. Install dependencies:
-   npm install
+    ```shell
+    npm install
+
+
+
 2. Start the development server:
-   npm start
+     ```shell
+    npm start
 
 Open your browser and visit http://localhost:3000 to use the application.
 
@@ -41,7 +45,7 @@ Create a new branch for your feature or bug fix.
 Make your changes.
 Submit a pull request.
 Credits
-This project was created by [Your Name].
+This project was created by Foysal Ahmed.
 
 License
 This project is open source and available under the MIT License.
