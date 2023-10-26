@@ -45,7 +45,7 @@ Create a new branch for your feature or bug fix.
 Make your changes.
 Submit a pull request.
 Credits
-This project was created by Foysal Ahmed.
+This project was created by [Foysal Ahmed](https://www.linkedin.com/in/mfoysal68).
 
 License
 This project is open source and available under the MIT License.
